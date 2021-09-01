@@ -15,7 +15,7 @@ public class SampleJunitTest extends BaseJunitClass {
     @Test
     void SampleJunitMethod2() {
         SamplePage samplePage = new SamplePage(driver);
-        samplePage.clickOnSoftwareTesting();
+        samplePage.clickOnQtp();
         System.out.println("TEST2");
     }
 }

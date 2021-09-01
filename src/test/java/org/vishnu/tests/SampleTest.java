@@ -15,7 +15,7 @@ public class SampleTest extends BaseClass {
     @Test
     void SampleTestNgMethod2() {
         SamplePage samplePage = new SamplePage(driver);
-        samplePage.clickOnSoftwareTesting();
+        samplePage.clickOnQtp();
         System.out.println("TEST2");
     }
 }

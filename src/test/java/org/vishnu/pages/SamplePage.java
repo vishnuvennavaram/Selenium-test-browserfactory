@@ -7,6 +7,7 @@ import org.vishnu.utils.PageUtils;
 public class SamplePage {
     PageUtils pageUtils;
     private final By softwareTestingLink = By.partialLinkText("Software Testing");
+    private final By qtp = By.partialLinkText("QTP (Quick Test Professional)");
 
     public SamplePage(WebDriver driver) {
         pageUtils = new PageUtils(driver);
@@ -14,5 +15,9 @@ public class SamplePage {
 
     public void clickOnSoftwareTesting() {
         pageUtils.clickElement(softwareTestingLink);
+    }
+
+    public void clickOnQtp() {
+        pageUtils.clickElement(qtp);
     }
 }
