@@ -1,4 +1,4 @@
-package org.vishnu;
+package org.vishnu.driver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.github.bonigarcia.wdm.config.DriverManagerType;
@@ -21,6 +21,10 @@ import org.vishnu.exceptions.HeadlessNotSupportedException;
 import static java.lang.Boolean.TRUE;
 import static org.vishnu.config.ConfigurationManager.configuration;
 
+/**
+ * This class contains the creation of the Browser web driver based on the Browser type.
+ * Browsers supported are CHROME, FIREFOX, EDGE, SAFARI, OPERA and IE.
+ */
 public enum BrowserFactory {
 
     CHROME {

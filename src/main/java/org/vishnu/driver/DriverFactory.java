@@ -1,4 +1,4 @@
-package org.vishnu;
+package org.vishnu.driver;
 
 import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
@@ -12,11 +12,11 @@ import java.util.logging.Logger;
 import static org.vishnu.config.ConfigurationManager.configuration;
 
 /**
- * Hello world!
+ * This class does the orchestration of the driver based on LOCAL OR REMOTE.
  */
 public class DriverFactory {
 
-    private static final Logger logger = Logger.getLogger("com.eliasnogueira");
+    private static final Logger logger = Logger.getLogger("com.vishnu");
 
     public WebDriver createInstance(String browser) {
         Target target = Target.valueOf(configuration().target().toUpperCase());

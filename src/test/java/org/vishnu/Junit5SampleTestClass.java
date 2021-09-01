@@ -1,20 +1,24 @@
-package org.vishnu;
+package org.vishnu;/*
 
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
 
+*/
 /**
  * Unit test for simple App.
  * Display names also can be given in Junit 5 for test classes and also test methods.
- */
+ *//*
+
 @Disabled
 @DisplayName("A special test case")
-@TestMethodOrder(OrderAnnotation.class)
+@TestMethodOrder(OrderAnnotation.class) */
 public class Junit5SampleTestClass
 {
-    @BeforeAll
+
+}
+    /*@BeforeAll
     static void initAll() {
     }
 
@@ -104,8 +108,7 @@ public class Junit5SampleTestClass
     }
 }
 
-/*
 junit.jupiter.execution.parallel.enabled = true
 junit.jupiter.execution.parallel.mode.default = same_thread
 junit.jupiter.execution.parallel.mode.classes.default = concurrent
- */
+*/
