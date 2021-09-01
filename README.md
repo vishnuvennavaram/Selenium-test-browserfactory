@@ -21,3 +21,11 @@ To run tests using TestNg, extend your test class with BaseClass.
 # How the driver instance is managed acrosss the test?
 driver instance is fetched from base class and then send across the test via constructor.
 Refer to Sample Test and Sample Page to understand the construction.
+
+# NEXT TO BE DONE
+1. Local threading to support parallel execution with TestNg
+https://rationaleemotions.wordpress.com/2013/07/31/parallel-webdriver-executions-using-testng/
+2. Extend its support to Junit 5 parallel execution if possible
+3. Use Allure reporting or extent reports or see inbuilt Jenkins reproting options
+4. Extend the framework to Grid
+5. Usage of docker libraries extension
