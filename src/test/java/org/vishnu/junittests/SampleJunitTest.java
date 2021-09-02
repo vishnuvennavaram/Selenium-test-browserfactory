@@ -1,28 +1,28 @@
-package org.vishnu.tests;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.Test;
-import org.vishnu.BaseClass;
+package org.vishnu.junittests;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
+import org.vishnu.BaseJunitClass;
 import org.vishnu.pages.SamplePage;
-
-public class SampleTest extends BaseClass {
-
+@Disabled
+public class SampleJunitTest extends BaseJunitClass {
     @Test
-    void SampleTestNgMethod() {
+    void SampleJunitMethod1() {
         SamplePage samplePage = new SamplePage(driver);
         samplePage.clickOnHomePageLinks("Software Testing");
         System.out.println("Hashcode of webDriver instance = " + driver.hashCode());
-        System.out.println("Software Testing");
+        System.out.println("Software Testing in Junit");
     }
 
     @Test
-    void SampleTestNgMethod2() {
+    void SampleJunitMethod2() {
         SamplePage samplePage = new SamplePage(driver);
-        samplePage.clickOnHomePageLinks("QTP");
         System.out.println("Hashcode of webDriver instance = " + driver.hashCode());
+        samplePage.clickOnHomePageLinks("QTP (Quick Test Professional) in Junit");
         System.out.println("QTP");
     }
 
-    @AfterMethod
+    @AfterEach
     void resetToHomePage() {
         resetState();
     }
